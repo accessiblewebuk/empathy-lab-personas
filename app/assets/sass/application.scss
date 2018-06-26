@@ -29,3 +29,13 @@ $path: "/public/images/";
 }
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+.badbutton {
+  @include button (#cc0000);
+  @include box-sizing (border-box);
+  vertical-align: top;
+
+  @include media (mobile) {
+    width: 100%;
+    text-align: center;
+  }
+}
