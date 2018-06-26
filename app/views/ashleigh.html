@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  list of test pages Ashleigh (blind)
+  Test issues Ashleigh (blind) would have
 {% endblock %}
 
 {% block content %}
@@ -10,13 +10,22 @@
   <div class="grid-row">
     <div class="column-two-thirds">
 
-      <h1 class="heading-large">Ashleigh (blind)</h1>
+      <h1 class="heading-large">Test issues Ashleigh (blind) would have</h1>
+
+      <p>Do the following tasks first on the page with problems and then on the page which fixed the problems.</p>
+      <ol class="list list-number">
+        <li>Fill in the form</li>
+        <li>Find out what the OECD average is nowadays</li>
+      </ol>
+
       <p>
-        <a class="button" href="ashleigh1">good example</a>
+        <a class="badbutton" href="ashleigh-bad">Page with problems</a>
       </p>
       <p>
-        <a class="badbutton" href="ashleigh2">bad example</a>
+        <a class="button" href="ashleigh-good">Page with fixes</a>
       </p>
+
+      <p><a href="https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles/ashleigh-partially-sighted-screenreader-user">More about Ashleigh</a></p>
 
     </div>
   </div>
