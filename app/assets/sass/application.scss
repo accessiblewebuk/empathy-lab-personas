@@ -41,13 +41,11 @@ $path: "/public/images/";
   }
 }
 //
-.pawel-bad {background-color:red; color:white}
-.app-c-banner {
-  display:block;
-  font-style: italic;
-  float:left;
-  width: 300px;
-  border: 25px dotted blue;
-  background-color:green;
-  color:white
+.pawel-bad {
+  color: #2be818;
+
+  .lede {
+    background-color: red;
+    color: white;
+  }
 }
