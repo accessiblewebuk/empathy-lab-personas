@@ -5,6 +5,7 @@ $path: "/public/images/";
 // Import GOV.UK elements from /govuk-modules/, this will import the frontend toolkit and some base styles.
 // Take a look in /govuk-modules/_govuk-elements.scss to see which files are imported.
 @import 'govuk-elements';
+@import 'prose';
 
 // Take a look at in app/assets/sass/patterns/ to see which files are imported.
 @import 'patterns/check-your-answers';
@@ -39,11 +40,3 @@ $path: "/public/images/";
     text-align: center;
   }
 }
-
-img {
-  max-width: 100%;
-}
-
-.pawel-bad {background-color:#ff0000; color:#ffffff}
-
-h2 {font-size: 30px}
