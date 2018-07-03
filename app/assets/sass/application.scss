@@ -53,14 +53,13 @@ $path: "/public/images/";
 .pawel2-bad {
   background-color: red;
   color: white;
-
-  a {
-    color: $panel-colour;
-  }
 }
 
-.pawel2-good {
+.pawel2-good.form-control {
   border-color: inherit;
+}
+.pawel2-good.govuk-box-highlight {
+  outline: 2px solid white;
 }
 
 .ron-bad {
