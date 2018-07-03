@@ -50,6 +50,19 @@ $path: "/public/images/";
   }
 }
 
+.pawel2-bad {
+  background-color: red;
+  color: white;
+
+  a {
+    color: $panel-colour;
+  }
+}
+
+.pawel2-good {
+  border-color: inherit;
+}
+
 .ron-bad {
   color: $panel-colour;
 }
