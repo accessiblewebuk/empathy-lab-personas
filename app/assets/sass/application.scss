@@ -63,5 +63,15 @@ $path: "/public/images/";
 }
 
 .ron-bad {
-  color: $panel-colour;
+  .govuk-box-highlight {
+    color: $panel-colour;
+  }
+}
+
+.ron-good {
+  .pagination a {
+    padding: .7em 1em;
+    border: 1px solid;
+    margin-right: .5em;
+  }
 }
