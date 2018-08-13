@@ -15,39 +15,39 @@
 
       <form>
         <div class="form-group">
-          <label class="form-label-bold" for="name">What is your name?</label>
-          <input class="form-control" id="name" name="name" type="text" />
+          <label class="form-label-bold" for="year">
+            What year is it?
+            <span class="form-hint">
+              For example, '2001'
+            </span>
+          </label>
+          <input class="form-control" id="year" name="year" type="text" />
         </div>
 
         <div class="form-group">
           <fieldset>
-
             <legend>
               <span class="form-label-bold">
-                What is the OECD average nowadays? (see graph below)
+                Can you read the graph below?
               </span>
             </legend>
 
             <div class="multiple-choice">
-              <input id="budget-1" type="radio" name="budget" value="0.8">
-              <label for="budget-1">0.8%</label>
+              <input id="accessgraph-yes" type="radio" name="accessgraph" value="yes">
+              <label for="accessgraph-yes">Yes</label>
             </div>
 
             <div class="multiple-choice">
-              <input id="budget-2" type="radio" name="budget" value="1.0">
-              <label for="budget-2">1.0%</label>
-            </div>
-
-            <div class="multiple-choice">
-              <input id="budget-3" type="radio" name="budget" value="2.5">
-              <label for="budget-3">2.5%</label>
+              <input id="accessgraph-no" type="radio" name="accessgraph" value="no">
+              <label for="accessgraph-no">No</label>
             </div>
 
           </fieldset>
         </div>
 
+        <h2>Types of assistive technology used to access GOV.UK</h2>
         <p>
-          <img src="/public/images/budget-table.jpg" alt="GDP per hour worked, average growth in percent; UK 1998-2007: 2.1%, UK 2008-present: 0.1%, G7 1998-2007: 1.9%, G7 2008-present: 0.8%, OECD 1998-2007: 2.5%, OECD 2008-present: 1.0%" />
+          <img src="/public/images/accessibility-survey-table.png" alt="Screen magnifier: 30%; screen reader: 29%; speech recognition: 18%; readability: 15%; other: 8%" />
         </p>
 
         <button class="button" type="submit">Continue</button>

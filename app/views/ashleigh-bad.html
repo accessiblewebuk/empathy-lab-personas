@@ -15,37 +15,39 @@
 
       <form>
         <div class="form-group">
-          <label class="form-label-bold" for="non-existent-id">What is your name?</label>
-          <input class="form-control" id="name" name="name" type="text" />
+          <label class="form-label-bold" for="non-existent-id">
+            What year is it?
+            <!-- TODO: test if JAWS still reads the whole label; if yes, try just a span -->
+            <span class="form-hint">
+              For example, '2001'
+            </span>
+          </label>
+          <input class="form-control" id="year" name="year" type="text" />
         </div>
 
         <div class="form-group">
           <fieldset>
 
             <div class="form-label-bold">
-              What is the OECD average nowadays? (see graph below)
+              Can you read the graph below?
             </div>
 
             <div class="multiple-choice">
-              <input id="budget-1" type="radio" name="budget" value="0.8">
-              <label for="budget-1">0.8%</label>
+              <input id="accessgraph-yes" type="radio" name="accessgraph" value="yes">
+              <label for="accessgraph-yes">Yes</label>
             </div>
 
             <div class="multiple-choice">
-              <input id="budget-2" type="radio" name="budget" value="1.0">
-              <label for="budget-2">1.0%</label>
-            </div>
-
-            <div class="multiple-choice">
-              <input id="budget-3" type="radio" name="budget" value="2.5">
-              <label for="budget-3">2.5%</label>
+              <input id="accessgraph-no" type="radio" name="accessgraph" value="no">
+              <label for="accessgraph-no">No</label>
             </div>
 
           </fieldset>
         </div>
 
+        <h2>Types of assistive technology used to access GOV.UK</h2>
         <p>
-          <img src="/public/images/budget-table.jpg" alt="Chart 1.3: Average annual productivity growth" />
+          <img src="/public/images/accessibility-survey-table.png" alt="Types of assistive technology" />
         </p>
 
         <button class="button" type="submit">Continue</button>
