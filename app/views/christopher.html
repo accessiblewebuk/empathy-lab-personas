@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Test issues Christopher (arthritis) would have
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1>Test issues Christopher (arthritis) would have</h1>
+
+      <p>Do the following tasks first on the page with problems and then on the page which fixed the problems. Hint: Navigate with the tab key.</p>
+      <ol>
+        <li>
+          Skip over the long list of items in the header by using the "skip to main content" link which appears as the first tabbable element on the page.
+        </li>
+        <li>
+          What is the explanation behind the question mark in the 'country' column?
+        </li>
+        <li>
+          What is the end date of the Algeria entry?
+        </li>
+      </ol>
+
+
+      <p>
+        <a class="badbutton" href="christopher-bad">Page with problems</a>
+      </p>
+      <p>
+        <a class="button" href="christopher-good">Page with fixes</a>
+      </p>
+
+      <p><a href="https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles/christopher-user-with-rheumatoid-arthritis">More about Christopher</a></p>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

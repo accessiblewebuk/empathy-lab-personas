@@ -29,6 +29,10 @@ $path: "/public/images/";
   }
 }
 
+#maincontent {
+  @extend #content;
+}
+
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 .badbutton {
   @include button (#cc0000);
@@ -73,5 +77,52 @@ $path: "/public/images/";
     padding: .7em 1em;
     border: 1px solid;
     margin-right: .5em;
+  }
+}
+
+.chris {
+
+  .fullscreen-scrollable-table {
+    overflow-x: auto;
+  }
+
+  table {
+    background-color: $highlight-colour;
+
+    th,
+    td {
+      padding: .3em 1em .3em .5em;
+      vertical-align: top;
+    }
+  }
+
+  .tooltip {
+    background-color: $white;
+    border: 3px solid $border-colour;
+    width: 10em;
+    padding: .5em;
+    position: absolute;
+    top: 1.5em;
+    left: 0;
+    white-space: normal;
+    font-weight: normal;
+    display: none;
+  }
+
+  th {
+    position: relative;
+    white-space: nowrap;
+  }
+
+  &.bad {
+    .tooltip-trigger:hover + .tooltip {
+      display: block;
+    }
+  }
+
+  &.good {
+    .tooltip-trigger:focus + .tooltip {
+      display: block;
+    }
   }
 }

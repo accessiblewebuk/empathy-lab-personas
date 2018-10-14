@@ -1,0 +1,96 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Examples of issues for Ashleigh (blind)
+{% endblock %}
+
+{% block proposition_links %}
+  <ul id="proposition-links">
+    <li><a href="#" class="active">Item #1</a></li>
+    <li><a href="#">Item #2</a></li>
+    <li><a href="#">Item #3</a></li>
+    <li><a href="#">Item #4</a></li>
+    <li><a href="#">Item #5</a></li>
+    <li><a href="#">Item #6</a></li>
+    <li><a href="#">Item #7</a></li>
+    <li><a href="#">Item #8</a></li>
+    <li><a href="#">Item #9</a></li>
+    <li><a href="#">Item #10</a></li>
+    <li><a href="#">Item #11</a></li>
+    <li><a href="#">Item #12</a></li>
+  </ul>
+{% endblock %}
+
+{% block content %}
+
+<main id="maincontent" role="main" class="chris bad">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a href="christopher" class="link-back">Back</a>
+      <h1>Examples of issues for Christopher (arthritis)</h1>
+
+
+      <h2>Country register</h2>
+
+      <div class="fullscreen-scrollable-table">
+        <table class="table register-data-table">
+          <thead>
+            <tr>
+              <th class="country">
+                Country
+                <span class="tooltip-trigger link"><span class="visually-hidden">What does country mean</span>?</span>
+                <span class="tooltip">The country's 2-letter ISO 3166-2 alpha2 code.</span>
+              </th>
+              <th class="name">
+                Name
+              </th>
+              <th class="official-name">
+                Official name
+              </th>
+              <th class="citizen-names">
+                Citizen names
+              </th>
+              <th class="start-date">
+                Start date
+              </th>
+              <th class="end-date">
+                End date
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>AF</td>
+              <td>Afghanistan</td>
+              <td>The Islamic Republic of Afghanistan</td>
+              <td>Afghan</td>
+              <td>No data</td>
+              <td>No data</td>
+            </tr>
+            <tr>
+              <td>AL</td>
+              <td>Albania</td>
+              <td>The Republic of Albania</td>
+              <td>Albanian</td>
+              <td>No data</td>
+              <td>No data</td>
+            </tr>
+            <tr>
+              <td>DZ</td>
+              <td>Algeria</td>
+              <td>The People's Democratic Republic of Algeria</td>
+              <td>Algerian</td>
+              <td>No data</td>
+              <td>No data</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
